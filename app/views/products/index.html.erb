@@ -1,5 +1,5 @@
 <ul>
-	<%= cart.each do |product| %>
+	<% cart.each do |product| %>
 		<li>
 			<%= product %>
 		</li>
@@ -8,5 +8,5 @@
 
 <%= form_tag '/products' do %>
 	<%= text_field_tag 'product' %>
-	<%= submit_tag %>
+	<%= submit_tag 'add to cart' %>
 <% end %>
